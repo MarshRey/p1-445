@@ -1132,8 +1132,7 @@ def main() -> None:
         print(performance_df)
     # TODO: Question 5: Apply a classifier to heldout features, and then use
     #       generate_challenge_labels to print the predicted labels
-    # X_challenge, y_challenge, X_heldout, feature_names = get_challenge_data()
-    
+
     def challenge(X_challenge, y_challenge, X_test, feautre_names, numerical_features, categorical_features):
         from sklearn.model_selection import cross_val_score
         from sklearn.impute import SimpleImputer
@@ -1180,8 +1179,8 @@ def main() -> None:
         return clf
         
     
-    test_impute_missing_values()
-    test_impliment_feature_matrix()
+    # test_impute_missing_values()
+    # test_impliment_feature_matrix()
     # test_feature_statistics(X_train, feature_names)
     # test_question2PartC()
     # test_question2PartD()
@@ -1193,9 +1192,9 @@ def main() -> None:
     # test_question33PartA()
     # test_question4PartB()
     # test_question4PartD()
-    # test_question4PartE()
-    X_challenge, y_challenge, X_heldout, feature_names, num_fea, cat_fea = get_challenge_data()
-    challenge(X_challenge, y_challenge, X_heldout, feature_names, num_fea, cat_fea)
+    test_question4PartE()
+    # X_challenge, y_challenge, X_heldout, feature_names, num_fea, cat_fea = get_challenge_data()
+    # challenge(X_challenge, y_challenge, X_heldout, feature_names, num_fea, cat_fea)
     
     
     
